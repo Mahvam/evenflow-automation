@@ -70,6 +70,21 @@
   .proof-card p { color: var(--text-body); font-size: 0.9rem; line-height: 1.65; }
   .proof-tag { display: inline-block; background: rgba(29,158,117,0.12); border: 1px solid rgba(29,158,117,0.3); color: var(--teal); font-size: 0.72rem; letter-spacing: 0.12em; padding: 0.3rem 0.75rem; margin-top: 1.25rem; text-transform: uppercase; font-weight: 500; }
 
+  .testimonial { border-left: 2px solid var(--teal); padding: 0.25rem 0 0.25rem 2rem; margin-top: 3rem; max-width: 820px; }
+  .testimonial blockquote { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 1.08rem; line-height: 1.75; color: var(--text-body); margin-bottom: 1.25rem; }
+  .testimonial cite { font-style: normal; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); font-weight: 500; }
+
+  #build { border-top: 1px solid var(--border); }
+  .build-card { border: 1px solid var(--border); padding: 2.5rem; margin-top: 3rem; transition: border-color 0.2s; }
+  .build-card:hover { border-color: var(--teal); }
+  .build-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.08em; color: var(--white); margin-bottom: 0.75rem; }
+  .build-card p { color: var(--text-body); font-size: 0.95rem; margin-bottom: 1.1rem; }
+  .build-stack { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+  .build-stack li { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border); padding: 0.3rem 0.75rem; }
+  .demo-box { background: rgba(29,158,117,0.07); border: 1px solid rgba(29,158,117,0.3); padding: 1.5rem; margin-top: 1.75rem; }
+  .demo-box .demo-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); font-weight: 500; margin-bottom: 0.85rem; }
+  .demo-creds { font-family: monospace; font-size: 0.85rem; color: var(--text-body); margin-top: 0.85rem; letter-spacing: 0.04em; }
+
   #services { border-top: 1px solid var(--border); }
   .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 3.5rem; }
   .service-card { border: 1px solid var(--border); padding: 1.75rem 1.5rem; position: relative; transition: border-color 0.2s; }
@@ -167,7 +182,7 @@
     <h1>Stop Doing <em>Everything</em> Manually.</h1>
     <p class="hero-sub">I help small business owners automate the tasks eating up their time so their business runs smoothly without them having to babysit it every day.</p>
     <a href="https://calendly.com/moradianmahva/30min" target="_blank" class="btn-primary">Book Your Free 30 Minute Discovery Call</a>
-    <p class="tagline">Your business should run smoother than a Pearl Jam setlist.</p>
+    <p class="tagline">Your business should keep running when you step away.</p>
   </div>
   <div class="hero-image-wrap">
     <div class="teal-overlay"></div>
@@ -275,6 +290,35 @@
         <span class="proof-tag">Client Story</span>
       </div>
     </div>
+    <div class="testimonial">
+      <blockquote>Working with Mahva was one of the best decisions I made for Curated KC. In one afternoon she took my vision from a ChatGPT thread and built a fully live, professional website at curatedkc.co. She handled everything including the design, the domain, the hosting, and getting all of our partner businesses linked up. The site is beautiful, works perfectly on mobile, and even has a WhatsApp share button for our international World Cup guests. Mahva is resourceful, fast, and genuinely talented at taking ideas and turning them into real working systems. I cannot recommend her enough.</blockquote>
+      <cite>Desiree Mealy, Owner, Curated KC</cite>
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="container">
+    <p class="section-label">Live Build</p>
+    <h2>Not a Mockup. Log In and Use It.</h2>
+    <div class="build-card">
+      <h3>HomeBase CRM</h3>
+      <p>A working customer relationship manager I built and deployed for my own business. It tracks leads, manages contacts, and writes follow up emails using AI. The email generator calls the Anthropic API directly, so it drafts a real message based on the actual contact record in front of it.</p>
+      <p>This is the kind of system I build for clients who have outgrown spreadsheets and sticky notes but do not want to pay for enterprise software they will never fully use.</p>
+      <ul class="build-stack">
+        <li>Python</li>
+        <li>FastAPI</li>
+        <li>PostgreSQL</li>
+        <li>Anthropic API</li>
+        <li>Deployed on Railway</li>
+      </ul>
+      <div class="demo-box">
+        <p class="demo-label">Try it yourself</p>
+        <a href="https://web-production-29528.up.railway.app" target="_blank" rel="noopener" class="btn-primary">Open the Live Demo</a>
+        <p class="demo-creds">Username: demo &nbsp;&nbsp;|&nbsp;&nbsp; Password: DemoAccess2025</p>
+      </div>
+      <span class="proof-tag">My Own Build</span>
+    </div>
   </div>
 </section>
 
@@ -315,9 +359,9 @@
         </div>
         <p class="service-name">Growth Package</p>
         <p class="service-price">From $2,500</p>
-        <p class="service-desc">Website plus automation setup. For businesses ready to look professional online and run more efficiently behind the scenes.</p>
+        <p class="service-desc">Landing page plus automation setup. For businesses ready to look professional online and run more efficiently behind the scenes.</p>
         <ul class="service-examples">
-          <li>Custom website build</li>
+          <li>Custom landing page build</li>
           <li>Lead capture automation</li>
           <li>Backend workflow setup</li>
         </ul>
